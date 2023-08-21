@@ -1,0 +1,290 @@
+/* Global reset */
+*{
+	margin:0;
+	padding:0;
+	position:relative;
+	transition:0.3s;
+	box-sizing:border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html{
+	height:100%;
+	overflow:hidden;
+}
+
+a{
+	text-decoration:none;
+	color:#000000;
+}
+
+p{
+	font-size:15px;
+	color:#C70039;
+	margin:20px 0;
+}
+
+ul{
+	list-style:none;
+}
+
+.header_container{
+	margin:0 auto;
+	width:100%;
+	background:#fefefe;
+	padding:20px;
+}
+
+.content_container{
+	max-width: 1000px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+body{
+	background:url(images/Guitar_wallpapers.jpg);background-size:cover;background-position:center center;
+	left:0;
+	height:100%;
+}
+
+/* Font styles */
+h1{
+	font-family: "Times New Roman", serif;
+	font-size:34px;
+	font-weight:700;
+	color:#0e0e0e;
+	border-bottom:2px solid #000000;
+}
+
+/* Header */
+header.header_container{
+	background:#C70039 ;
+	-webkit-box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.36);
+	-moz-box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.36);
+	box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.36);
+	text-align:right;
+	overflow:hidden;
+}
+
+header.header_container h1{
+	float:left;
+}
+
+.hamburger_menu{
+	float:right;
+	cursor:pointer;
+	padding:10px;
+}
+
+.hamburger_menu i{
+	font-size:30px;
+	color:#0e0e0e;
+}
+
+.side_menu{
+	position:absolute;
+	padding:20px;
+	top:0;
+	right:-169px;
+	text-align:left;
+	background:url(images/Metallic.jpg);background-size:cover;background-position:center center;
+	height:100%;
+	max-width:169px;
+}
+
+.side_menu a .line{
+	background:#C70039;
+}
+
+.side_menu a{
+	font-family: 'Roboto Slab', serif;
+	font-size:20px;
+	color:#C70039;
+	font-weight:700;
+	padding: 8px 0px;
+	display: block;
+}
+
+.side_menu li ul{
+	height:0;
+	overflow:hidden;
+	transition:0.4s;
+}
+
+.side_menu li ul li{
+	border-bottom: 1px solid #e0e0e0;
+	text-align: left;
+	padding-bottom: 2px;
+}
+
+.side_menu li:hover ul{
+	height:26.3px;
+}
+
+.side_menu li a i{
+	margin-left:10px;
+}
+
+.header_links{
+	display: inline-block;
+	padding-top: 15px;
+	margin-right: 20px;
+}
+
+.header_links a{
+	font-weight:100;
+	font-size: 12px;
+	display:inline-block;
+}
+
+a .line{
+	width:0px;
+	display:block;
+	margin-top:2px;
+	background:#fff;
+	height:2px;
+}
+
+.header_links a:first-child{
+	margin-right:10px;
+}
+
+a:hover .line{
+	width:100%;
+}
+
+.content{
+	text-align:center;
+}
+
+.content h2{
+	font-family: 'Roboto Slab', serif;
+	font-size:28px;
+	font-weight:700;
+	text-transform:uppercase;
+	color:#C70039;
+	border:2px solid #000;
+	display:inline-block;
+	margin:60px 0 30px;
+	padding:2px 6px;
+	background:url(images/Metallic.jpg);background-size:cover;background-position:center center;
+}
+
+.news_item{
+	max-width:calc(33.33% - 10px);
+	width:100%;
+	display:inline-block;
+	border:1px solid #e0e0e0;
+	vertical-align:top;
+	background:url(images/Metallic.jpg);background-size:cover;background-position:center center;
+}
+
+.news_item .news_item_content{
+	padding:10px;
+	text-align:left;
+}
+
+.news_item .news_item_content h4{
+	font-family: 'Roboto Slab', serif;
+	font-size:20px;
+	font-weight:700;
+	color:#C70039;
+	margin:10px 0;
+}
+
+.news_item .news_item_content p{
+	
+}
+
+.news_item .news_item_image{
+	height:180px;
+	width:100%;
+	border-bottom:2px solid #C70039;
+}
+
+.news_item:not(:last-child){
+	margin-right:10px;
+}
+
+.news-nav ul li{
+display:inline-block;
+vertical-align:middle;
+border:1px solid #000;
+color:#C70039;
+padding:6px 10px;
+	background:url(images/Metallic.jpg);background-size:cover;background-position:center center;
+}
+
+
+.pagination ul li:not(:first-child){
+margin-left:10px;
+color:#C70039;
+}
+
+.pagination ul li{
+display:inline-block;
+vertical-align:middle;
+color:#C70039;
+padding:8px 10px;
+border:1px solid #000;
+background:url(images/Metallic.jpg);background-size:cover;background-position:center center;
+
+}
+
+.news_indv{
+display:block;
+width:100%;
+margin: 0;
+max-width:100%;
+}
+
+.news_indv .news_item_content{
+width:calc(100% - 190px);
+display:inline-block;
+border-left:3px solid red;
+height:180px;
+}
+
+.news_indv  .news_item_image{
+display:inline-block;
+width:180px;
+vertical-align:top;
+border-bottom:0;
+}
+
+.content_section{
+	width:98%;
+	margin:0 auto;
+	position:relative;
+	background:url(images/Metallic.jpg);background-size:cover;background-position:center center;
+	padding:15px;
+	text-align:left;
+}
+
+.image_left{
+	float:left;
+	width:100px;
+	height:auto;
+}
+
+.image_right{
+	float:right;
+	width:100px;
+	height:auto;
+}
+
+form input{
+	display:block;
+	width:100%;
+	margin:10px auto;
+}
+
+form textarea{
+	display:block;
+	width:100%;
+	height:300px;
+}
+
+.news_item_content.nored{
+	border-left:0;
+}
